@@ -69,6 +69,11 @@ body {
 }
 
 .rating-box > .cercle:hover {
+    background-color: rgb(124, 136, 152);;
+    color: white;
+}
+
+.rating-box > .cercle.selected:hover {
     background-color: var(--orange);
     color: white;
 }
@@ -97,9 +102,10 @@ body {
 
 
 .selected {
-    background-color: rgb(124, 136, 152);
+    background-color: var(--orange);
     color: white;
 }
+
 
 .thank-you-card {
     max-width: 410px;
