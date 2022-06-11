@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+:root {
+    --orange: hsl(25, 97%, 53%);
+    --white: hsl(0, 0%, 100%);
+    --light-grey: hsl(217, 12%, 63%);
+    --medium-grey: hsl(216, 12%, 54%);
+    --dark-blue: hsl(213, 19%, 18%);
+    --very-dark-blue: hsl(216, 12%, 8%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Overpass";
+    font-size: 15px;
+    background-color: var(--very-dark-blue);
+}
+
+.card {
+    max-width: 410px;
+    background-color: rgb(31, 38, 48);
+    margin: 100px auto;
+    padding: 30px;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.rating-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card h1 {
+    color: var(--white);
+    font-size: 1.5rem;
+    margin-top: 30px;
+}
+
+.card p {
+    color: var(--light-grey);
+    margin: 10px 0 25px 0;
+}
+
+.cercle {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: var(--dark-blue);
+    color: var(--medium-grey);
+    text-align: center;
+    vertical-align: middle;
+    line-height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cercle img {
+    object-fit: none;
+}
+
+.rating-box > .cercle {
+    cursor: pointer;
+}
+
+.rating-box > .cercle:hover {
+    background-color: var(--orange);
+    color: white;
+}
+
+.btn {
+    display: flex;
+    width: 340px;
+    height: 46px;
+    background-color: var(--orange);
+    border-radius: 23px;
+    margin-top: 25px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(255, 234, 208);
+    font-size: 1rem;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: white;
+    color: var(--orange);
+}
+
+
+.selected {
+    background-color: rgb(124, 136, 152);
+    color: white;
+}
+
+.thank-you-card {
+    max-width: 410px;
+    background-color: rgb(31, 38, 48);
+    margin: 100px auto;
+    padding: 40px 35px 55px 35px;
+    border-radius: 25px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.thank-you-card h1 {
+    color: var(--white);
+    font-size: 1.5rem;
+    margin-top: 30px;
+}
+
+.thank-you-card p {
+    color: var(--light-grey);
+    margin: 10px 0 25px 0;
+    text-align: center;
+}
+
+.result-container {
+    width: 200px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: var(--dark-blue);
+    color: var(--orange);
+    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    font-size: 0.9rem;
+}
+
+.disabled {
+    pointer-events: none;
+}
